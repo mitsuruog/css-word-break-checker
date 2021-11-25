@@ -1,0 +1,25 @@
+{
+  "appName": {
+    "message": "CSS Word-Break Checker",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "word-breakが間違っている所を分かりやすくします。",
+    "description": "The description of the application"
+  },
+  "options": {
+    "message": "設定"
+  },
+  "replacementText": {
+    "message": "置き換え用テキスト"
+  },
+  "ignoreSelectors": {
+    "message": "除外するSelectorリスト"
+  },
+  "ignoreSelectorsNote1": {
+    "message": "複数ある場合は改行してください。"
+  },
+  "ignoreSelectorsNote2": {
+    "message": "設定したSelectorはその子要素にも影響します。そのため、bodyなどの最上位の要素を設定しないようにしてください。"
+  }
+}

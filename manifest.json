@@ -1,0 +1,17 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "assets/icons/Icon-16.png",
+    "128": "assets/icons/Icon-128.png"
+  },
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_page": "options.html",
+  "browser_action": {},
+  "default_locale": "ja"
+}

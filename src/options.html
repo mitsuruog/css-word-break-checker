@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="options.css" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <h1 data-message-key="options"></h1>
+    <form>
+      <fieldset>
+        <section>
+          <label
+            for="replacement_text"
+            data-message-key="replacementText"
+          ></label>
+          <div>
+            <textarea id="replacement_text"></textarea>
+          </div>
+        </section>
+        <section>
+          <label
+            for="ignore_selectors"
+            data-message-key="ignoreSelectors"
+          ></label>
+          <div>
+            <textarea id="ignore_selectors"></textarea>
+          </div>
+          <p>
+            <div data-message-key="ignoreSelectorsNote1"></div>
+            <div data-message-key="ignoreSelectorsNote2"></div>
+          </p>
+        </section>
+      </fieldset>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>

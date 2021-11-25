@@ -1,0 +1,25 @@
+{
+  "appName": {
+    "message": "CSS Word-Break Checker",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Making it easier to see where word breaks are wrong.",
+    "description": "The description of the application"
+  },
+  "options": {
+    "message": "Options"
+  },
+  "replacementText": {
+    "message": "Replacement Text"
+  },
+  "ignoreSelectors": {
+    "message": "Ignore Selectors"
+  },
+  "ignoreSelectorsNote1": {
+    "message": "Add a line break to have multiple selectors."
+  },
+  "ignoreSelectorsNote2": {
+    "message": "The selector will affect on the all child elements. so that don't add very top level selector like body."
+  }
+}
