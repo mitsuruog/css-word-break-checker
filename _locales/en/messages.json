@@ -21,5 +21,8 @@
   },
   "ignoreSelectorsNote2": {
     "message": "The selector will affect on the all child elements. so that don't add very top level selector like body."
+  },
+  "ignoreSelectorsInvalid": {
+    "message": "Please enter a valid CSS selector"
   }
 }

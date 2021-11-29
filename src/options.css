@@ -1,3 +1,7 @@
+:root {
+  --css-word-break-checker--error: #ef5350;
+}
+
 fieldset {
   max-width: 45rem;
   padding: 1rem;
@@ -10,4 +14,18 @@ textarea {
 
 section:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+.input-error {
+  display: none;
+}
+
+.has-error textarea {
+  color: var(--css-word-break-checker--error);
+  border-color: var(--css-word-break-checker--error);
+}
+
+.has-error .input-error {
+  display: block;
+  color: var(--css-word-break-checker--error);
 }

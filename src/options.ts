@@ -1,6 +1,7 @@
 import "./options.css";
 
 import { applyMassage } from "./shared/services/i18n";
+import { isValidCSSSelector } from "./shared/services/validation";
 import { storeOptions, restoreOptions } from "./shared/services/store";
 
 applyMassage();
@@ -26,5 +27,14 @@ $replacemetText.addEventListener("input", (e) => {
 
 $ignoreSelectors.addEventListener("input", (e) => {
   const { value } = e.target as HTMLTextAreaElement;
-  storeOptions({ ignoreSelectors: value });
+  const isValid = value
+    .trim()
+    .split("\n")
+    .every((selector) => isValidCSSSelector(selector));
+  if (isValid) {
+    $ignoreSelectors.closest("div").classList.remove("has-error");
+    storeOptions({ ignoreSelectors: value });
+  } else {
+    $ignoreSelectors.closest("div").classList.add("has-error");
+  }
 });

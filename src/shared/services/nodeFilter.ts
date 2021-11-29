@@ -1,6 +1,8 @@
 
 export function buildNodeFilter(ignoreSelectors: string) {
-  const selectors = ignoreSelectors.split("\n").map(selector => `"${selector.trim()}"`);
+  const selectors = ignoreSelectors.split("\n")
+    .filter(selector => Boolean(selector.trim()))
+    .map(selector => `"${selector.trim()}"`);
   return `function nodeFilter(node) {
     if (
       [${selectors}].some(
@@ -10,6 +12,5 @@ export function buildNodeFilter(ignoreSelectors: string) {
       return NodeFilter.FILTER_REJECT;
     }
     return NodeFilter.FILTER_ACCEPT;
-  }
-  `;
+  }`;
 }
