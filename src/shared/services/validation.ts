@@ -1,4 +1,4 @@
-export function isValidSiteURL(url: string) {
+export function isValidSiteURL(url: string): boolean {
   if (!url.startsWith("http://") && !url.startsWith("https://")) {
     return false;
   }
@@ -7,4 +7,13 @@ export function isValidSiteURL(url: string) {
     return false;
   }
   return true;
+}
+
+export function isValidCSSSelector(value: string): boolean {
+  try {
+    document.querySelector(value);
+    return true;
+  } catch(e) {
+    return false;
+  }
 }

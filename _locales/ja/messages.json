@@ -21,5 +21,8 @@
   },
   "ignoreSelectorsNote2": {
     "message": "設定したSelectorはその子要素にも影響します。そのため、bodyなどの最上位の要素を設定しないようにしてください。"
+  },
+  "ignoreSelectorsInvalid": {
+    "message": "正しいCSSセレクターを設定してください"
   }
 }
